@@ -100,13 +100,16 @@ function addbooktoLibrary() {
 const uptbtn = document.querySelector(".ısRead");
 
 window.addEventListener("click", function (e) {
-  // burada ise ekrana click eventi ekleriz
-  if (e.target.innerText == "Okundu") {
-    // eğer tıkladığımız eventin innertexti okundu ise okunmadıya çevirir.
-    e.target.innerText = "Okunmadı"; //
-  } else if (e.target.innerText == "Okunmadı") {
-    // değilse okunmadı yazsını okundu olarak değitirir.
-    e.target.innerText = "Okundu";
+  console.log(typeof e.target.nodeName);
+  if (e.target.nodeName == "BUTTON") {
+    if (e.target.innerText == "Okundu") {
+      // burada ise ekrana click eventi ekleriz
+      // eğer tıkladığımız eventin innertexti okundu ise okunmadıya çevirir.
+      e.target.innerText = "Okunmadı"; //
+    } else if (e.target.innerText == "Okunmadı") {
+      // değilse okunmadı yazsını okundu olarak değitirir.
+      e.target.innerHTML = "Okundu";
+    }
   }
 });
 // özelliklik üstüne eklemeler yapacağım asıl amacaım sayfadaki okunmuş tuşuna bastığım zaman sadece okunanları göstermek

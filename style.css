@@ -1,0 +1,190 @@
+* {
+  margin: 0px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffbf0d;
+  box-shadow: 0px 5px 5px black;
+}
+.right {
+  font-size: 25px;
+  font-variant: small-caps;
+  margin: 10px;
+}
+a {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: white;
+}
+.body {
+  display: flex;
+  flex: 1;
+  background-color: #fff8e6;
+}
+
+aside {
+  background: #ffbf0d;
+  flex-shrink: 0;
+  width: 200px;
+  padding: 16px;
+  height: 100vh;
+}
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+aside button {
+  display: block;
+  background-color: #ffbf0d;
+  color: black;
+  padding: 35px;
+  margin: 10px;
+  border: none;
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+}
+aside button:active {
+  background-color: #555;
+  color: white;
+}
+.active {
+  background-color: #555;
+  color: white;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 5%;
+}
+table {
+  border-collapse: collapse;
+}
+.books-title {
+  font-weight: bolder;
+  font-size: 20px;
+  margin: 10px;
+  border-bottom: 1px solid #555;
+  height: 50px;
+}
+.books-info {
+  border-bottom: 1px solid #555;
+  height: 100px;
+}
+#abc {
+  width: 100%;
+  height: 100%;
+  opacity: 0.95;
+  top: 0;
+  left: 0;
+  display: none;
+  position: fixed;
+  background-color: #313131;
+}
+img#close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+div#popupContact {
+  position: absolute;
+  left: 50%;
+  top: 17%;
+  margin-left: -202px;
+  font-family: "Raleway", sans-serif;
+}
+form {
+  max-width: 300px;
+  min-width: 250px;
+  padding: 10px 50px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  font-family: raleway;
+  background-color: #fff;
+}
+p {
+  margin-top: 30px;
+}
+#abc h2 {
+  background-color: #feffed;
+  padding: 20px 35px;
+  margin: -10px -50px;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+}
+hr {
+  margin: 10px -50px;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+input[type="text"] {
+  width: 82%;
+  padding: 10px;
+  margin-top: 30px;
+  border: 1px solid #ccc;
+  padding-left: 20px;
+  font-size: 16px;
+  font-family: raleway;
+}
+#name {
+  background-repeat: no-repeat;
+  background-position: 5px 7px;
+}
+#author {
+  background-repeat: no-repeat;
+  background-position: 5px 7px;
+}
+
+#submit {
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  display: block;
+  background-color: #ffbc00;
+  color: #fff;
+  border: 1px solid #ffcb00;
+  padding: 10px 0;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+#pages {
+  width: 82%;
+  padding: 10px;
+  margin-top: 30px;
+  border: 1px solid #ccc;
+  padding-left: 20px;
+
+  font-size: 16px;
+  font-family: raleway;
+}
+#read {
+  margin: 30px 0 30px 10px;
+}
+label {
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 5px;
+}
+.ısRead {
+  height: 30px;
+  width: 100px;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="right"><h2>Library</h2></div>
+        <div class="left">
+          <a href="https://github.com/Ahmetufukkurt">Github</a
+          ><a href="https://www.linkedin.com/in/ahmet-ufuk-kurt-1ba7a5241/"
+            >Linkedin</a
+          >
+        </div>
+      </header>
+      <div class="body">
+        <aside>
+          <div class="button-container">
+            <button class="active">Tüm Kitaplar</button>
+            <button class="alldone">Okunmuş</button>
+            <button>Okunacaklar</button>
+            <button class="add-book" onclick="div_show()">Kitap Ekle</button>
+          </div>
+        </aside>
+        <div class="content">
+          <table>
+            <tr class="books-title">
+              <td>Kitap Adı</td>
+              <td>Yazarı</td>
+              <td>Sayfa Sayısı</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div id="abc">
+      <div id="popupContact">
+        <form id="form" name="form">
+          <img
+            id="close"
+            src="closeKey.png"
+            onclick="div_hide()"
+            width="20px"
+            height="20px"
+          />
+          <h2>Add book</h2>
+          <hr />
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Name"
+            value=""
+          />
+          <input
+            id="author"
+            name="author"
+            type="text"
+            placeholder="Author"
+            value=""
+          />
+          <input
+            id="pages"
+            name="pages"
+            type="number"
+            placeholder="Pages"
+            value=""
+          />
+
+          <input type="checkbox" name="ısRead" id="read" />
+          <label for="Read">Are you read this book</label>
+        </form>
+        <button id="submit" onclick="div_hide()">Kitap Ekle</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
